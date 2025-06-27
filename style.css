@@ -1,0 +1,82 @@
+.all{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border:solid black 1px;
+}.box{
+    height: 400px;
+    width: 400px;
+    background-color:blanchedalmond;
+    margin:50px;
+    border:dotted black 1px;
+}
+.enm1{
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+    background-color:palevioletred;
+    transform: translateX(100px);
+}
+.enm2{
+    animation: bounce2 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+      background-color: palevioletred;
+    transform: translateX(200px);
+}
+
+.p{
+
+    height:30px;
+    width: 30px;
+    display: inline-block;
+    background-color:coral;
+    transform: translate(-88px,190px);
+    animation: move 6.5s linear infinite;
+    animation-play-state: paused;
+}
+.p:hover{
+    background-color:yellow;
+    /* animation-play-state: running; */
+}
+.box:active .p {
+    background-color:cornflowerblue;
+    animation-play-state: running;
+}
+.box:hover{
+    background-color: cadetblue;
+}
+
+@keyframes bounce {
+    0%{
+
+    }
+    50%{
+        /* : 20px; */
+        /* color:black; */
+        transform: translate(100px,350px);
+        /* transform: translateX(100px); */
+        background-color: brown;
+    }
+    100%{
+    }
+}
+
+@keyframes bounce2 {
+    0%{
+
+    }
+    50%{
+        /* : 20px; */
+        /* color:black; */
+        transform: translate(200px,350px);
+        /* transform: translateX(200px); */
+        background-color: brown;
+    }
+    100%{
+    }
+}
+@keyframes move {
+    50%{
+         transform: translate(265px,190px);
+    }
+}
